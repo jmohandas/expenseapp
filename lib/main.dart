@@ -9,7 +9,7 @@ class ExpenseApp extends StatelessWidget {
     Transaction(
       id: 't1',
       title: 'Netflix',
-      cost: 9.99,
+      cost: 19.99,
       time: DateTime.now(),
     ),
     Transaction(
@@ -44,12 +44,37 @@ class ExpenseApp extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Container(
-                      child: Text(tx.cost.toString()),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.purple,
+                          width: 2,
+                        ),
+                      ),
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 15,
+                      ),
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        tx.cost.toString(),
+                        style: TextStyle(
+                            color: Colors.purple,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16),
+                      ),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text(tx.title),
-                        Text(tx.time.toString()),
+                        Text(
+                          tx.title,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        Text(
+                          tx.time.toString(),
+                          style: TextStyle(fontSize: 12, color: Colors.grey,),
+                        ),
                       ],
                     )
                   ],
