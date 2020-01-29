@@ -12,11 +12,16 @@ class ExpenseApp extends StatelessWidget {
         ),
         body: Column(
           children: <Widget>[
-            Card(
-              child: Text('Graphical View'),
+            Container(
+              width: double.infinity,
+              child: Card(
+                child: Text('Graphical View'),
+                elevation: 5,
+                color: Colors.blue
+              ),
             ),
             Card(
-              child: Text('Graphical View'),
+              child: Text('List of transactions'),
             ),
           ],
         ),
