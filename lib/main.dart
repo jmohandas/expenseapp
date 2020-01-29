@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import './transaction.dart';
 
@@ -56,7 +57,7 @@ class ExpenseApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(10),
                       child: Text(
-                        tx.cost.toString(),
+                        '\$${tx.cost}',
                         style: TextStyle(
                             color: Colors.purple,
                             fontWeight: FontWeight.bold,
@@ -70,9 +71,10 @@ class ExpenseApp extends StatelessWidget {
                         Text(
                           tx.title,
                           style: TextStyle(fontSize: 16),
+                          
                         ),
                         Text(
-                          tx.time.toString(),
+                          DateFormat.yMMMd().format(tx.time),
                           style: TextStyle(fontSize: 12, color: Colors.grey,),
                         ),
                       ],
