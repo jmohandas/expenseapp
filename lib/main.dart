@@ -8,24 +8,25 @@ class ExpenseApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: Text('Expense Tracker'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Expense Tracker'),
+        ),
+        body: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              child: Card(
+                  child: Text('Graphical View'),
+                  elevation: 5,
+                  color: Colors.blue),
+            ),
+            CombinedListAndInput(),
+          ],
+        ),
       ),
-      body: Column(
-        // mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Container(
-            width: double.infinity,
-            child: Card(
-                child: Text('Graphical View'),
-                elevation: 5,
-                color: Colors.blue),
-          ),
-          CombinedListAndInput(),
-        ],
-      ),
-    ));
+    );
   }
 }

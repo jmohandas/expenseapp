@@ -23,6 +23,78 @@ class _CombinedListAndInputState extends State<CombinedListAndInput> {
       cost: 45.68,
       time: DateTime.now(),
     ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't1',
+      title: 'Netflix',
+      cost: 19.99,
+      time: DateTime.now(),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'Weekly shopping',
+      cost: 45.68,
+      time: DateTime.now(),
+    ),
   ];
 
   _addNewTransaction(String title, double cost) {
