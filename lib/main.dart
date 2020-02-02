@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './widgets/transactionInput.dart';
-import './widgets/transactionsList.dart';
+import './widgets/combinedListAndInput.dart';
 
 void main() => runApp(ExpenseApp());
 
@@ -24,8 +23,7 @@ class ExpenseApp extends StatelessWidget {
                 elevation: 5,
                 color: Colors.blue),
           ),
-          TransactionInput(),
-          TransactionsList(),
+          CombinedListAndInput(),
         ],
       ),
     ));
