@@ -9,7 +9,7 @@ class TransactionsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 490,
       child: ListView.builder(
         itemBuilder: (context, index) {
           return Card(
